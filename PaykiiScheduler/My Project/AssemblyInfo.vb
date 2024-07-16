@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("TestApp")>
+<Assembly: AssemblyTitle("PaykiiIntegrator")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("HP Inc.")>
-<Assembly: AssemblyProduct("TestApp")>
-<Assembly: AssemblyCopyright("Copyright © HP Inc. 2022")>
+<Assembly: AssemblyCompany("Qubiq3")>
+<Assembly: AssemblyProduct("PaykiiIntegrator")>
+<Assembly: AssemblyCopyright("Copyright © Qubiq3 2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("77bc45c1-1548-4075-a96b-5a3e99655725")>
+<Assembly: Guid("77bc45c1-1548-4075-a96b-6a3e99655725")>
 
 ' Version information for an assembly consists of the following four values:
 '

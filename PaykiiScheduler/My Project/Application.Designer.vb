@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.DingIntegrator.frmDingIntegrator
+            Me.MainForm = Global.PaykiiIntegrator.frmPaykiiIntegrator
         End Sub
     End Class
 End Namespace

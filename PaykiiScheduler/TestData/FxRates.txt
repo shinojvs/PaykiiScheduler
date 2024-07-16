@@ -1,0 +1,260 @@
+﻿[ {
+    "ResponseCode": "00",
+    "FXDate": "2023-03-16",
+    "ResponseMessage": "Process complete",
+    "ResponseDateTime": "2023-08-06 03:16:28",
+    "SettlementCurrencies": [
+        {
+            "SettlementCurrency": "VND",
+            "BillerTypes": [
+                {
+                    "BillerType": "Utility",
+                    "FXRate": "23396.6501"
+                },
+                {
+                    "BillerType": "Mobile Postpaid",
+                    "FXRate": "23396.6501"
+                },
+                {
+                    "BillerType": "Others",
+                    "FXRate": "23278.9607"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "CRC",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "543.4882"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "PHP",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "54.9185"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "PKR",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "281.5996"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "IDR",
+            "BillerTypes": [
+                {
+                    "BillerType": "Education",
+                    "FXRate": "15273.5392"
+                },
+                {
+                    "BillerType": "Others",
+                    "FXRate": "15396.9618"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "MXN",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "18.9388"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "INR",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "82.4764"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "DOP",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "54.5190"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "COP",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "4843.4240"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "GTQ",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "7.7461"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "NIO",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "36.4099"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "NPR",
+            "BillerTypes": [
+                {
+                    "BillerType": "Government",
+                    "FXRate": "131.1629"
+                },
+                {
+                    "BillerType": "Others",
+                    "FXRate": "131.6929"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "PEN",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "3.7736"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "HNL",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "24.5415"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "EGP",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "30.6538"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "KES",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "129.1078"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "JMD",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "151.6968"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "NGN",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "457.7430"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "UGX",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "3716.4582"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "GHS",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "12.2732"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "AED",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "3.6725"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "JOD",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "0.7070"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "ARS",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "201.2262"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "BRL",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "5.2572"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "THB",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "34.3617"
+                }
+            ]
+        },
+        {
+            "SettlementCurrency": "MYR",
+            "BillerTypes": [
+                {
+                    "BillerType": "All",
+                    "FXRate": "4.4477"
+                }
+            ]
+        }
+    ],
+    "BaseCurrency": "USD"
+}
+]

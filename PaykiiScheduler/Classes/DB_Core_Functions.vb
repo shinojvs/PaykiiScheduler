@@ -7,6 +7,9 @@ Module DB_Core_Functions
     Private Function GetConnection() As OracleConnection
         Dim conStr As String = ""
         conStr = String.Concat(String.Concat(String.Concat(String.Concat("Data Source=" + VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "Service", "efresh") + ";", "User ID=", VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "UID", "ec"), ";"), "Password=", VendTek.AdministratorNet.Tools.DecPW(VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "PWD")), ";"), "Max Pool Size=", VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "MaxPoolSize", "200"), ";"), "Pooling=true;")
+
+        InputBox("", "", conStr) 'shinoj remove
+
         Return New OracleConnection(conStr)
     End Function
 
@@ -24,7 +27,7 @@ Module DB_Core_Functions
             If IsDBNull(ReturnValue) Then Return "Null"
             Return ReturnValue
         Catch ex As Exception
-            WriteToLogFile(" ExecuteScalarFunction EX:" & ex.Message, True)
+            WriteToLogFile(" ExecuteScalarFunction EX: " & QueryString & " " & ex.Message, True)
             _SqlCmd.Connection.Close()
             Throw ex
         End Try
@@ -45,7 +48,7 @@ Module DB_Core_Functions
             GC.Collect()
             Return dt
         Catch ex As Exception
-            WriteToLogFile(" ReturnDataTable EX:" & ex.Message, True)
+            WriteToLogFile(" ReturnDataTable EX: " & SQLStr & " " & ex.Message, True)
             _SqlCmd.Connection.Close()
             Return Nothing
         End Try
@@ -66,7 +69,7 @@ Module DB_Core_Functions
             Return ReturnValue.ToString
             Return False
         Catch ex As Exception
-            WriteToLogFile(" ExecuteNonQueryFunction EX:" & ex.Message, True)
+            WriteToLogFile(" ExecuteNonQueryFunction EX: " & QueryString & " " & ex.Message, True)
             _SqlCmd.Connection.Close()
             Throw ex
         End Try

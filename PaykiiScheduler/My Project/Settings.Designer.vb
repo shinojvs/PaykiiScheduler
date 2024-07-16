@@ -56,25 +56,26 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("7DB20F3225484154BDDC2D096EDE4CCA")>  _
-        Public ReadOnly Property UserName() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("5pgZNJYTC3LTSLesGYpushRtuJYd89Zw")>  _
+        Public ReadOnly Property x_api_key() As String
             Get
-                Return CType(Me("UserName"),String)
+                Return CType(Me("x_api_key"),String)
             End Get
         End Property
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("G7VZ4MCV39DDCSMGY4TBRSU49NQU29SE")>  _
-        Public ReadOnly Property Password() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("eyJlbnRpdHlpZCI6ICI3NTI2IiwgIlNpZ25hdHVyZSI6ICJDNnBtUGttME83OERNZzBWS0hOVEQ1U08if"& _ 
+            "Q==_xHtOeiSCkzBRYWw4FqzXU7sLStM=")>  _
+        Public ReadOnly Property token() As String
             Get
-                Return CType(Me("Password"),String)
+                Return CType(Me("token"),String)
             End Get
         End Property
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://edts.ezedistributor.com/api/EdtsV3/")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://tr.bilrs.com/v2.1/test/")>  _
         Public ReadOnly Property URL() As String
             Get
                 Return CType(Me("URL"),String)
@@ -92,7 +93,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("AED")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("USD")>  _
         Public ReadOnly Property OpCurrencyISO() As String
             Get
                 Return CType(Me("OpCurrencyISO"),String)
@@ -109,9 +110,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.DingIntegrator.My.MySettings
+        Friend ReadOnly Property Settings() As Global.PaykiiIntegrator.My.MySettings
             Get
-                Return Global.DingIntegrator.My.MySettings.Default
+                Return Global.PaykiiIntegrator.My.MySettings.Default
             End Get
         End Property
     End Module

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmDingIntegrator
+Partial Class frmPaykiiIntegrator
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,23 +27,16 @@ Partial Class frmDingIntegrator
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDingIntegrator))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPaykiiIntegrator))
         Me.txtLog = New System.Windows.Forms.TextBox()
         Me.lblHeader = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnGetFxRate = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnGetPromotionsDesc = New System.Windows.Forms.Button()
-        Me.btnGetProductDescriptions = New System.Windows.Forms.Button()
-        Me.btnGetProducts = New System.Windows.Forms.Button()
-        Me.btnGetProviders = New System.Windows.Forms.Button()
-        Me.btnGetAllRegions = New System.Windows.Forms.Button()
-        Me.btnGetPromotions = New System.Windows.Forms.Button()
-        Me.btnGetRegionsByCountry = New System.Windows.Forms.Button()
-        Me.btnGetCurrencies = New System.Windows.Forms.Button()
-        Me.btnAuto = New System.Windows.Forms.Button()
+        Me.btnGetIOCatalog = New System.Windows.Forms.Button()
+        Me.btnGetSKUCatalog = New System.Windows.Forms.Button()
         Me.btnFetchDBData = New System.Windows.Forms.Button()
-        Me.btnGetCountries = New System.Windows.Forms.Button()
-        Me.btnGetProviderStatus = New System.Windows.Forms.Button()
+        Me.btnGetBillerCatalog = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtURL = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -78,30 +71,32 @@ Partial Class frmDingIntegrator
         Me.lblHeader.Name = "lblHeader"
         Me.lblHeader.Size = New System.Drawing.Size(1072, 63)
         Me.lblHeader.TabIndex = 11
-        Me.lblHeader.Text = "Ding Integrator"
+        Me.lblHeader.Text = "Paykii Integrator"
         Me.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.Panel1.Controls.Add(Me.btnGetFxRate)
         Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnGetPromotionsDesc)
-        Me.Panel1.Controls.Add(Me.btnGetProductDescriptions)
-        Me.Panel1.Controls.Add(Me.btnGetProducts)
-        Me.Panel1.Controls.Add(Me.btnGetProviders)
-        Me.Panel1.Controls.Add(Me.btnGetAllRegions)
-        Me.Panel1.Controls.Add(Me.btnGetPromotions)
-        Me.Panel1.Controls.Add(Me.btnGetRegionsByCountry)
-        Me.Panel1.Controls.Add(Me.btnGetCurrencies)
-        Me.Panel1.Controls.Add(Me.btnAuto)
+        Me.Panel1.Controls.Add(Me.btnGetIOCatalog)
+        Me.Panel1.Controls.Add(Me.btnGetSKUCatalog)
         Me.Panel1.Controls.Add(Me.btnFetchDBData)
-        Me.Panel1.Controls.Add(Me.btnGetCountries)
-        Me.Panel1.Controls.Add(Me.btnGetProviderStatus)
+        Me.Panel1.Controls.Add(Me.btnGetBillerCatalog)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 573)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1072, 106)
         Me.Panel1.TabIndex = 12
+        '
+        'btnGetFxRate
+        '
+        Me.btnGetFxRate.Location = New System.Drawing.Point(383, 13)
+        Me.btnGetFxRate.Name = "btnGetFxRate"
+        Me.btnGetFxRate.Size = New System.Drawing.Size(138, 33)
+        Me.btnGetFxRate.TabIndex = 31
+        Me.btnGetFxRate.Text = "Get FxRate"
+        Me.btnGetFxRate.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -111,88 +106,24 @@ Partial Class frmDingIntegrator
         Me.Button1.TabIndex = 29
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
-        Me.Button1.Visible = False
         '
-        'btnGetPromotionsDesc
+        'btnGetIOCatalog
         '
-        Me.btnGetPromotionsDesc.Location = New System.Drawing.Point(509, 52)
-        Me.btnGetPromotionsDesc.Name = "btnGetPromotionsDesc"
-        Me.btnGetPromotionsDesc.Size = New System.Drawing.Size(126, 33)
-        Me.btnGetPromotionsDesc.TabIndex = 28
-        Me.btnGetPromotionsDesc.Text = "Get Promotions Desc"
-        Me.btnGetPromotionsDesc.UseVisualStyleBackColor = True
+        Me.btnGetIOCatalog.Location = New System.Drawing.Point(239, 13)
+        Me.btnGetIOCatalog.Name = "btnGetIOCatalog"
+        Me.btnGetIOCatalog.Size = New System.Drawing.Size(138, 33)
+        Me.btnGetIOCatalog.TabIndex = 22
+        Me.btnGetIOCatalog.Text = "Get IO Catalog"
+        Me.btnGetIOCatalog.UseVisualStyleBackColor = True
         '
-        'btnGetProductDescriptions
+        'btnGetSKUCatalog
         '
-        Me.btnGetProductDescriptions.Location = New System.Drawing.Point(354, 52)
-        Me.btnGetProductDescriptions.Name = "btnGetProductDescriptions"
-        Me.btnGetProductDescriptions.Size = New System.Drawing.Size(149, 33)
-        Me.btnGetProductDescriptions.TabIndex = 27
-        Me.btnGetProductDescriptions.Text = "Get Product Descriptions"
-        Me.btnGetProductDescriptions.UseVisualStyleBackColor = True
-        '
-        'btnGetProducts
-        '
-        Me.btnGetProducts.Location = New System.Drawing.Point(240, 52)
-        Me.btnGetProducts.Name = "btnGetProducts"
-        Me.btnGetProducts.Size = New System.Drawing.Size(108, 33)
-        Me.btnGetProducts.TabIndex = 26
-        Me.btnGetProducts.Text = "Get Products"
-        Me.btnGetProducts.UseVisualStyleBackColor = True
-        '
-        'btnGetProviders
-        '
-        Me.btnGetProviders.Location = New System.Drawing.Point(12, 52)
-        Me.btnGetProviders.Name = "btnGetProviders"
-        Me.btnGetProviders.Size = New System.Drawing.Size(108, 33)
-        Me.btnGetProviders.TabIndex = 25
-        Me.btnGetProviders.Text = "Get Providers"
-        Me.btnGetProviders.UseVisualStyleBackColor = True
-        '
-        'btnGetAllRegions
-        '
-        Me.btnGetAllRegions.Location = New System.Drawing.Point(383, 13)
-        Me.btnGetAllRegions.Name = "btnGetAllRegions"
-        Me.btnGetAllRegions.Size = New System.Drawing.Size(138, 33)
-        Me.btnGetAllRegions.TabIndex = 24
-        Me.btnGetAllRegions.Text = "Get All Regions"
-        Me.btnGetAllRegions.UseVisualStyleBackColor = True
-        '
-        'btnGetPromotions
-        '
-        Me.btnGetPromotions.Location = New System.Drawing.Point(527, 13)
-        Me.btnGetPromotions.Name = "btnGetPromotions"
-        Me.btnGetPromotions.Size = New System.Drawing.Size(108, 33)
-        Me.btnGetPromotions.TabIndex = 23
-        Me.btnGetPromotions.Text = "Get Promotions"
-        Me.btnGetPromotions.UseVisualStyleBackColor = True
-        '
-        'btnGetRegionsByCountry
-        '
-        Me.btnGetRegionsByCountry.Location = New System.Drawing.Point(239, 13)
-        Me.btnGetRegionsByCountry.Name = "btnGetRegionsByCountry"
-        Me.btnGetRegionsByCountry.Size = New System.Drawing.Size(138, 33)
-        Me.btnGetRegionsByCountry.TabIndex = 22
-        Me.btnGetRegionsByCountry.Text = "Get Regions By Country"
-        Me.btnGetRegionsByCountry.UseVisualStyleBackColor = True
-        '
-        'btnGetCurrencies
-        '
-        Me.btnGetCurrencies.Location = New System.Drawing.Point(125, 13)
-        Me.btnGetCurrencies.Name = "btnGetCurrencies"
-        Me.btnGetCurrencies.Size = New System.Drawing.Size(108, 33)
-        Me.btnGetCurrencies.TabIndex = 21
-        Me.btnGetCurrencies.Text = "Get Currencies"
-        Me.btnGetCurrencies.UseVisualStyleBackColor = True
-        '
-        'btnAuto
-        '
-        Me.btnAuto.Location = New System.Drawing.Point(952, 13)
-        Me.btnAuto.Name = "btnAuto"
-        Me.btnAuto.Size = New System.Drawing.Size(108, 33)
-        Me.btnAuto.TabIndex = 20
-        Me.btnAuto.Text = "Automatic Mode"
-        Me.btnAuto.UseVisualStyleBackColor = True
+        Me.btnGetSKUCatalog.Location = New System.Drawing.Point(125, 13)
+        Me.btnGetSKUCatalog.Name = "btnGetSKUCatalog"
+        Me.btnGetSKUCatalog.Size = New System.Drawing.Size(108, 33)
+        Me.btnGetSKUCatalog.TabIndex = 21
+        Me.btnGetSKUCatalog.Text = "Get SKUCatalog"
+        Me.btnGetSKUCatalog.UseVisualStyleBackColor = True
         '
         'btnFetchDBData
         '
@@ -204,24 +135,14 @@ Partial Class frmDingIntegrator
         Me.btnFetchDBData.UseVisualStyleBackColor = True
         Me.btnFetchDBData.Visible = False
         '
-        'btnGetCountries
+        'btnGetBillerCatalog
         '
-        Me.btnGetCountries.Location = New System.Drawing.Point(11, 13)
-        Me.btnGetCountries.Name = "btnGetCountries"
-        Me.btnGetCountries.Size = New System.Drawing.Size(108, 33)
-        Me.btnGetCountries.TabIndex = 18
-        Me.btnGetCountries.Text = "Get Countries"
-        Me.btnGetCountries.UseVisualStyleBackColor = True
-        Me.btnGetCountries.Visible = False
-        '
-        'btnGetProviderStatus
-        '
-        Me.btnGetProviderStatus.Location = New System.Drawing.Point(126, 52)
-        Me.btnGetProviderStatus.Name = "btnGetProviderStatus"
-        Me.btnGetProviderStatus.Size = New System.Drawing.Size(108, 33)
-        Me.btnGetProviderStatus.TabIndex = 16
-        Me.btnGetProviderStatus.Text = "Get Provider Status"
-        Me.btnGetProviderStatus.UseVisualStyleBackColor = True
+        Me.btnGetBillerCatalog.Location = New System.Drawing.Point(11, 13)
+        Me.btnGetBillerCatalog.Name = "btnGetBillerCatalog"
+        Me.btnGetBillerCatalog.Size = New System.Drawing.Size(108, 33)
+        Me.btnGetBillerCatalog.TabIndex = 18
+        Me.btnGetBillerCatalog.Text = "Get Biller Catalog"
+        Me.btnGetBillerCatalog.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -360,7 +281,7 @@ Partial Class frmDingIntegrator
         Me.DGVUsers.TabIndex = 16
         Me.DGVUsers.TabStop = False
         '
-        'frmDingIntegrator
+        'frmPaykiiIntegrator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -373,8 +294,8 @@ Partial Class frmDingIntegrator
         Me.Controls.Add(Me.lblHeader)
         Me.Controls.Add(Me.txtLog)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "frmDingIntegrator"
-        Me.Text = "Ding Integrator"
+        Me.Name = "frmPaykiiIntegrator"
+        Me.Text = "Paykii Integrator"
         Me.Panel1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -395,18 +316,11 @@ Partial Class frmDingIntegrator
     Friend WithEvents Label10 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents btnClear As Button
-    Friend WithEvents btnGetProviderStatus As Button
-    Friend WithEvents btnGetCountries As Button
+    Friend WithEvents btnGetBillerCatalog As Button
     Friend WithEvents btnFetchDBData As Button
     Friend WithEvents DGVUsers As DataGridView
-    Friend WithEvents btnAuto As Button
-    Friend WithEvents btnGetPromotions As Button
-    Friend WithEvents btnGetRegionsByCountry As Button
-    Friend WithEvents btnGetCurrencies As Button
-    Friend WithEvents btnGetAllRegions As Button
-    Friend WithEvents btnGetProviders As Button
-    Friend WithEvents btnGetProductDescriptions As Button
-    Friend WithEvents btnGetProducts As Button
-    Friend WithEvents btnGetPromotionsDesc As Button
+    Friend WithEvents btnGetIOCatalog As Button
+    Friend WithEvents btnGetSKUCatalog As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnGetFxRate As Button
 End Class

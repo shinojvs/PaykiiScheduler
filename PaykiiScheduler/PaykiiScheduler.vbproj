@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9D0DD177-5192-4790-B6AF-16071BAE75CE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>DingIntegrator.My.MyApplication</StartupObject>
-    <RootNamespace>DingIntegrator</RootNamespace>
-    <AssemblyName>DingIntegrator</AssemblyName>
+    <StartupObject>PaykiiIntegrator.My.MyApplication</StartupObject>
+    <RootNamespace>PaykiiIntegrator</RootNamespace>
+    <AssemblyName>PaykiiIntegrator</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>DingIntegrator.xml</DocumentationFile>
+    <DocumentationFile>PaykiiIntegrator.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>DingIntegrator.xml</DocumentationFile>
+    <DocumentationFile>PaykiiIntegrator.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -121,14 +121,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\clsDing.vb" />
+    <Compile Include="Classes\ClsPaykii.vb" />
     <Compile Include="Classes\DB_Core_Functions.vb" />
     <Compile Include="Classes\ModCommon.vb" />
-    <Compile Include="Classes\modDingAPICalls.vb" />
-    <Compile Include="frmDingIntegrator.Designer.vb">
-      <DependentUpon>frmDingIntegrator.vb</DependentUpon>
+    <Compile Include="Classes\ModPaykiiApiCalls.vb" />
+    <Compile Include="frmPaykiiIntegrator.Designer.vb">
+      <DependentUpon>frmPaykiiIntegrator.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmDingIntegrator.vb">
+    <Compile Include="frmPaykiiIntegrator.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -149,8 +149,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmDingIntegrator.resx">
-      <DependentUpon>frmDingIntegrator.vb</DependentUpon>
+    <EmbeddedResource Include="frmPaykiiIntegrator.resx">
+      <DependentUpon>frmPaykiiIntegrator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -174,6 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="account-login-32 %281%29.ico" />
+    <Content Include="TestData\FxRates.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
