@@ -88,7 +88,7 @@ Public Class frmPaykiiIntegrator
     Private Sub btnGetBillerCatalog_Click_1(sender As Object, e As EventArgs) Handles btnGetBillerCatalog.Click
         Try
 
-            PaykiiBillerCatalogUpdate(Format(Now, dotNetDateFormat))
+            PaykiiBillerCatalogUpdate(Format(Now, dotNetDateFormat), True)
 
             Log("Completed")
 
@@ -112,7 +112,7 @@ Public Class frmPaykiiIntegrator
 
         Try
 
-            PaykiiSKUCatalogUpdate(Format(Now, dotNetDateFormat))
+            PaykiiSKUCatalogUpdate(Format(Now, dotNetDateFormat), True)
 
             Log("Completed")
 
@@ -126,7 +126,7 @@ Public Class frmPaykiiIntegrator
 
         Try
 
-            PaykiiIOCatalogUpdate(Format(Now, dotNetDateFormat))
+            PaykiiIOCatalogUpdate(Format(Now, dotNetDateFormat), True)
 
             Log("Completed")
 

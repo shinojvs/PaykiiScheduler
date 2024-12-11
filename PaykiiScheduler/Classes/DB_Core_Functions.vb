@@ -8,7 +8,7 @@ Module DB_Core_Functions
         Dim conStr As String = ""
         conStr = String.Concat(String.Concat(String.Concat(String.Concat("Data Source=" + VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "Service", "efresh") + ";", "User ID=", VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "UID", "ec"), ";"), "Password=", VendTek.AdministratorNet.Tools.DecPW(VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "PWD")), ";"), "Max Pool Size=", VendTek.AdministratorNet.ClsRegistry.GetSetting("eComm", "MaxPoolSize", "200"), ";"), "Pooling=true;")
 
-        InputBox("", "", conStr) 'shinoj remove
+        'InputBox("", "", conStr) 'shinoj remove
 
         Return New OracleConnection(conStr)
     End Function

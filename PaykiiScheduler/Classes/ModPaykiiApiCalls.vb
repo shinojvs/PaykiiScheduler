@@ -16,7 +16,7 @@ Module ModPaykiiApiCalls
     Private ROW_EXISTS As String = "ROW_EXISTS"
     Private ROW_UPDATED As String = "ROW_UPDATED"
 #End Region
-    Private Function GetPaykiiApiResponse(paramApiName As String, paramJsonBody As String) As IRestResponse
+    Private Function GetPaykiiApiResponse(paramApiName As String, paramJsonBody As String, Optional writeResponse As Boolean = False) As IRestResponse
 
         System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12 Or System.Net.SecurityProtocolType.Tls11 Or System.Net.SecurityProtocolType.Tls
         Dim client = New RestClient(_url + paramApiName)
@@ -30,6 +30,12 @@ Module ModPaykiiApiCalls
         request.AddParameter("application/json", paramJsonBody, ParameterType.RequestBody)
 
         Dim response As IRestResponse = client.Execute(request)
+
+
+        If writeResponse Then
+            WriteToLogFile(response.Content)
+        End If
+
         Return response
 
     End Function
@@ -165,7 +171,7 @@ Module ModPaykiiApiCalls
         Next
     End Sub
 
-    Function PaykiiBillerCatalogUpdate(schedulerTime As String) As Boolean
+    Function PaykiiBillerCatalogUpdate(schedulerTime As String, Optional writeResponse As Boolean = False) As Boolean
 
         Try
 
@@ -173,7 +179,7 @@ Module ModPaykiiApiCalls
 
             UpdatePaykiiSchedulerFields("LAST_RUN_TIME", " '" & schedulerTime & "' ", "PaykiiBillerCatalogUpdate", False)
 
-            Dim response As IRestResponse = GetPaykiiApiResponse("BillerCatalog", ReturnJsonBodyBillerCatalogReq.ToString())
+            Dim response As IRestResponse = GetPaykiiApiResponse("BillerCatalog", ReturnJsonBodyBillerCatalogReq.ToString(), writeResponse)
             Dim objRes = JsonConvert.DeserializeObject(Of List(Of ClsPaykii.BillerCatalogRes))(response.Content)
             Dim tempCount As Int16 = 0
             Dim _tempStr As String, _tempNumber As ULong = 0
@@ -350,7 +356,7 @@ Module ModPaykiiApiCalls
     End Sub
 
 
-    Function PaykiiSKUCatalogUpdate(schedulerTime As String) As Boolean
+    Function PaykiiSKUCatalogUpdate(schedulerTime As String, Optional writeResponse As Boolean = False) As Boolean
 
         Try
 
@@ -358,7 +364,7 @@ Module ModPaykiiApiCalls
 
             UpdatePaykiiSchedulerFields("LAST_RUN_TIME", " '" & schedulerTime & "' ", "PaykiiSKUCatalogUpdate", False)
 
-            Dim response As IRestResponse = GetPaykiiApiResponse("SKUCatalog", ReturnJsonBodyReq())
+            Dim response As IRestResponse = GetPaykiiApiResponse("SKUCatalog", ReturnJsonBodyReq(), writeResponse)
 
             Dim objRes = JsonConvert.DeserializeObject(Of List(Of ClsPaykii.SKUCatalogRes))(response.Content)
 
@@ -567,7 +573,7 @@ Module ModPaykiiApiCalls
         Next
     End Sub
 
-    Function PaykiiIOCatalogUpdate(schedulerTime As String) As Boolean
+    Function PaykiiIOCatalogUpdate(schedulerTime As String, Optional writeResponse As Boolean = False) As Boolean
 
         Try
 
